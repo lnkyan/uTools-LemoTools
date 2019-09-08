@@ -8,7 +8,7 @@
     "license": "MIT",
     "scripts": {
         "serve": "vue-cli-service serve",
-        "build": "vue-cli-service build && copy /Y app\\* dist && copy /Y README.md dist",
+        "build": "vue-cli-service build && copy /Y app\\* dist",
         "lint": "vue-cli-service lint"
     },
     "dependencies": {
