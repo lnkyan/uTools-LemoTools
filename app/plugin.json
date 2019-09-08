@@ -1,0 +1,37 @@
+{
+    "pluginName": "LemoTools",
+    "description": "可以在 uTools 里使用的 LemoChain 工具",
+    "version": "0.0.1",
+    "author": "Lnk",
+    "homepage": "https://github.com/lnkyan/uTools-LemoTools",
+    "main": "index.html",
+    "preload": "preload.js",
+    "logo": "logo.png",
+    "development": {
+        "preload": "../app/preload.js",
+        "main": "http://localhost:8080/index.html"
+    },
+    "features": [
+        {
+            "code": "send",
+            "explain": "转账",
+            "cmds": [
+                "send",
+                "发送",
+                {
+                    "type": "regex",
+                    "label": "向该地址转账",
+                    "match": "/^lemo[23456789ABCDFGHJKNPQRSTWYZ]{36}$/i",
+                    "minLength": 5,
+                    "maxLength": 40
+                }
+            ]
+        },
+        {
+            "code": "wallet",
+            "cmds": [
+                "wallet"
+            ]
+        }
+    ]
+}

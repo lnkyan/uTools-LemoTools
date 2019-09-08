@@ -1,0 +1,54 @@
+{
+    "name": "uools-lemotools",
+    "version": "0.1.0",
+    "private": true,
+    "description": "可以在 uTools 里使用的 LemoChain 工具",
+    "author": "Lnk",
+    "homepage": "https://github.com/lnkyan/uTools-LemoTools",
+    "license": "MIT",
+    "scripts": {
+        "serve": "vue-cli-service serve",
+        "build": "vue-cli-service build && copy /Y app\\* dist && copy /Y README.md dist",
+        "lint": "vue-cli-service lint"
+    },
+    "dependencies": {
+        "core-js": "^2.6.5",
+        "iview": "^3.5.0",
+        "lemo-client": "^0.10.10",
+        "lemo-utils": "^1.1.4",
+        "vue": "^2.6.10",
+        "vue-router": "^3.0.3",
+        "vuex": "^3.0.1"
+    },
+    "devDependencies": {
+        "@vue/cli-plugin-babel": "^3.1.1",
+        "@vue/cli-plugin-eslint": "^3.1.1",
+        "@vue/cli-service": "^3.1.1",
+        "@vue/eslint-config-airbnb": "^4.0.1",
+        "babel-eslint": "^10.0.1",
+        "eslint": "^5.16.0",
+        "eslint-plugin-vue": "^5.0.0",
+        "lint-staged": "^8.1.5",
+        "node-sass": "^4.9.0",
+        "sass-loader": "^7.1.0",
+        "vue-template-compiler": "^2.6.10"
+    },
+    "postcss": {
+        "plugins": {
+            "autoprefixer": {}
+        }
+    },
+    "browserslist": [
+        "> 1%",
+        "last 2 versions"
+    ],
+    "gitHooks": {
+        "pre-commit": "lint-staged"
+    },
+    "lint-staged": {
+        "*.{js,vue}": [
+            "vue-cli-service lint",
+            "git add"
+        ]
+    }
+}
