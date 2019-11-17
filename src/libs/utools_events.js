@@ -1,7 +1,11 @@
-export function init(store) {
+export function init(vueRouter) {
+    if (!window.utools) {
+        console.warn('web调试模式')
+        return
+    }
     utools.onPluginEnter(({code, type, payload}) => {
         if (code === 'send' && type === 'regex') {
-            store.commit('setTxTo', {txTo: payload})
+            vueRouter.push({name: wallet, query: {to: payload}})
         }
     })
 }
