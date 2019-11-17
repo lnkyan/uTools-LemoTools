@@ -1,10 +1,10 @@
 # uTools-LemoTools
 可以在`uTools`里使用的 LemoChain 工具
 
-## 安装
 
-- 下载`.upx`文件: [releases](https://github.com/lnkyan/uTools-LemoTools/releases)
-- 复制或拖入`uTools`主输入框中即可以进行安装
+## 安装
+1. 下载`.upx`文件: [releases](https://github.com/lnkyan/uTools-LemoTools/releases)
+2. 复制或拖入`uTools`主输入框中即可以进行安装
 
 
 ## 唤起关键词
@@ -28,6 +28,7 @@
 
 3. 复制`app/plugin.json`文件，然后打开`uTools`安装插件
 
+
 ## 打包
 1. 编译
     ```shell
@@ -35,6 +36,7 @@
     ```
 
 2. 打开`uTools`的插件管理面板，点击打包，得到`.upx`文件
+
 
 ## License
 MIT

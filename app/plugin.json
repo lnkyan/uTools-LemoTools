@@ -9,7 +9,8 @@
     "logo": "logo.png",
     "development": {
         "preload": "../app/preload.js",
-        "main": "http://localhost:8080/index.html"
+        "main": "http://localhost:8080/index.html",
+        "buildPath": "../dist"
     },
     "features": [
         {
