@@ -5,7 +5,7 @@
                 <i-input v-model="to" placeholder="请输入目标地址"></i-input>
             </i-col>
             <i-col span="12">
-                <i-input v-model="amount" placeholder="请输入数量">
+                <i-input v-model="amount" class="amount-input" placeholder="请输入数量">
                     <span slot="append">LEMO</span>
                 </i-input>
             </i-col>
@@ -50,6 +50,10 @@
 
         .ivu-row {
             margin-bottom: 20px;
+        }
+
+        .amount-input {
+            top: 0;
         }
     }
 </style>
