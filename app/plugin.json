@@ -1,7 +1,7 @@
 {
     "pluginName": "LemoTools",
     "description": "可以在 uTools 里使用的 LemoChain 工具",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "author": "Lnk",
     "homepage": "https://github.com/lnkyan/uTools-LemoTools",
     "main": "index.html",
